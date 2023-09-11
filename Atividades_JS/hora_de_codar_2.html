@@ -310,44 +310,175 @@
                 alert (`o maior número é ${biblioteca[3]}`);
 
             } */
-/*exercicio 7
-while (true) {
-    biblioteca = [];
 
-    var valor1;
-    do {
-        valor1 = parseFloat(prompt("insira o valor 1"));
-        if (isNaN(valor1)) {
-            alert("Isso não é um número!");
-        }
-    } while (isNaN(valor1));
-    
-    biblioteca.push(valor1);
-    alert(`Número ${valor1} adicionado.`);
 
-    var valor2;
-    do {
-        valor2 = parseFloat(prompt("insira o valor 2"));
-        if (isNaN(valor2)) {
-            alert("Isso não é um número!");
-        } else if (biblioteca.includes(valor2)) {
-            alert("Este número já foi inserido.");
-        }
-    } while (isNaN(valor2) || biblioteca.includes(valor2));
 
-    biblioteca.push(valor2);
-    alert(`Número ${valor2} adicionado.`);
-
-    // Continue com os outros valores da mesma maneira...
-
-    alert(`Os números inseridos foram: ${biblioteca.join(', ')}`);
-
-    biblioteca.sort((a, b) => a - b);
-    
-    alert(`O maior número é ${biblioteca[5]}`);
-}
-*/
+            /*7. Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados. Escreva o valor final da soma efetuada e também todos valores que o usuário informou.*/  
             
+           /*  
+            while (true) {
+
+                biblioteca = [];
+                
+                var valor1 = parseFloat(prompt("insira um primeiro número:"));
+
+                if (isNaN(valor1)){
+                    alert ("isso não é um número");
+                }else {
+                    (biblioteca.push(valor1));
+                alert(`Número ${valor1} adicionado.`);
+                }
+
+                var valor2 = parseFloat(prompt("insira o segundo número:"));
+
+                if (isNaN(valor2)){
+                    alert ("isso não é um número");
+                }else {
+                    (biblioteca.push(valor2));
+                alert(`Número ${valor2} adicionado.`);
+                }
+                
+                var valor3 = parseFloat(prompt("insira o terceiro número:"));
+
+                if (isNaN(valor3)){
+                    alert ("isso não é um número");
+                }else {
+                    (biblioteca.push(valor3));
+                alert(`Número ${valor3} adicionado.`);
+                }
+
+                var valor4 = parseFloat(prompt("insira o quarto número:"));
+
+                if (isNaN(valor4)){
+                    alert ("isso não é um número");
+                }else {
+                    (biblioteca.push(valor4));
+                alert(`Número ${valor4} adicionado.`);
+                }
+
+                var valor5 = parseFloat(prompt("insira o quinto número:"));
+
+                if (isNaN(valor5)){
+                    alert ("isso não é um número");
+                }else {
+                    (biblioteca.push(valor5));
+                alert(`Número ${valor5} adicionado.`);
+                }
+
+                var valor6 = parseFloat(prompt("insira o sexto número:"));
+
+                if (isNaN(valor6)){
+                    alert ("isso não é um número");
+                }else {
+                    (biblioteca.push(valor6));
+                alert(`Número ${valor6} adicionado.`);
+                }
+
+
+                alert(`Os números inseridos foram: ${biblioteca.join(', ')}`);
+
+                var soma = 0;
+
+                for (var n = 0; n < biblioteca.length; n++) {
+                    if (biblioteca[n] < 72) {
+                        soma = soma + biblioteca[n];
+                    }
+                }
+                
+                alert(`A soma de todos os números menores que 72 é ${soma}`);
+
+                var continuar = prompt("Deseja comparar outros números? (Digite 'sim' para continuar ou 'não' para sair)").charAt(0).toLowerCase();
+
+                if (continuar !== 's' ) {
+                    alert("Obrigado! \n O programa foi encerrado.");
+                    break;
+
+                }
+        
+            } */
+            
+            /* 8. Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra situação,  */
+
+            while (true) {
+
+            biblioteca = [];
+
+            var valor1 = parseFloat(prompt("insira um primeiro número:"));
+
+            if (isNaN(valor1)){
+                alert ("isso não é um número");
+            }else {
+                (biblioteca.push(valor1));
+            alert(`Número ${valor1} adicionado.`);
+            }
+
+            var valor2 = parseFloat(prompt("insira o segundo número:"));
+
+            if (isNaN(valor2)){
+                alert ("isso não é um número");
+            }else {
+                (biblioteca.push(valor2));
+            alert(`Número ${valor2} adicionado.`);
+            }
+
+            var valor3 = parseFloat(prompt("insira o terceiro número:"));
+
+            if (isNaN(valor3)){
+                alert ("isso não é um número");
+            }else {
+                (biblioteca.push(valor3));
+            alert(`Número ${valor3} adicionado.`);
+            }
+
+            var valor4 = parseFloat(prompt("insira o quarto número:"));
+
+            if (isNaN(valor4)){
+                alert ("isso não é um número");
+            }else {
+                (biblioteca.push(valor4));
+            alert(`Número ${valor4} adicionado.`);
+            }
+
+            var valor5 = parseFloat(prompt("insira o quinto número:"));
+
+            if (isNaN(valor5)){
+                alert ("isso não é um número");
+            }else {
+                (biblioteca.push(valor5));
+            alert(`Número ${valor5} adicionado.`);
+            }
+
+            var valor6 = parseFloat(prompt("insira o sexto número:"));
+
+            if (isNaN(valor6)){
+                alert ("isso não é um número");
+            }else {
+                (biblioteca.push(valor6));
+            alert(`Número ${valor6} adicionado.`);
+            }
+
+
+            alert(`Os números inseridos foram: ${biblioteca.join(', ')}`);
+
+            var soma = 0;
+
+            for (var n = 0; n < biblioteca.length; n++) {
+                if (biblioteca[n] < 72) {
+                    soma = soma + biblioteca[n];
+                }
+            }
+
+            alert(`A soma de todos os números menores que 72 é ${soma}`);
+
+            var continuar = prompt("Deseja comparar outros números? (Digite 'sim' para continuar ou 'não' para sair)").charAt(0).toLowerCase();
+
+            if (continuar !== 's' ) {
+                alert("Obrigado! \n O programa foi encerrado.");
+                break;
+
+            }
+        }
+                        
 
 
 
